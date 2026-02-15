@@ -23,6 +23,5 @@ export const config = {
   jwtExpire: getEnv("JWT_EXPIRE", "7d"),
 
   // Frontend
-  frontendUrl: getEnv("FRONTEND_URL", "http://localhost:5173"),
-
+  frontendUrl: getEnv("CORS_ORIGIN", "http://localhost:3000"),
 };

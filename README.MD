@@ -1,4 +1,5 @@
 # Everything Green - Backend API
+
 A robust Node.js + Express + MongoDB backend API for the Everything Green application. This API handles user authentication, profile management, and provides a secure foundation for eco-friendly keyword tracking.
 
 ## 🚀 Features
@@ -10,6 +11,7 @@ A robust Node.js + Express + MongoDB backend API for the Everything Green applic
 - MongoDB: Efficient document-based data storage with Mongoose ODM
 
 ## 📋 Prerequisites
+
 Before you begin, ensure you have the following installed:
 
 - Node.js (v18 or higher)
@@ -17,41 +19,56 @@ Before you begin, ensure you have the following installed:
 - MongoDB (local installation or MongoDB Atlas account)
 
 ## 🛠️ Installation
+
 1. Clone the repository
-bashgit clone <repository-url>
-cd everything-green-backend
+   bashgit clone <repository-url>
+   cd everything-green-backend
 2. Install dependencies
+
 ```bash
  npm install
 ```
+
 3. Set up environment variables
-Create a .env file in the root directory by copying the example file:
+   Create a .env file in the root directory by copying the example file:
+
 ```bash
-cp .env.example .env 
+cp .env.example .env
 ```
+
 Edit the .env file with your configuration:
+
 - env# Server Configuration
 - NODE_ENV=development
 - PORT=5000
 
 ### Database Configuration
+
 - MONGO_URI=your_mongodb_uri
 
 ### JWT Configuration
+
 - JWT_SECRET=your-super-secret-jwt-key
 - JWT_EXPIRE=7d
 
 ### CORS Configuration
+
 - CORS_ORIGIN=http://localhost:3000
+
 ## 🏃 Running the Application
+
 1. Development Mode
- - Run with hot-reload enabled:
-```bash 
+
+- Run with hot-reload enabled:
+
+```bash
 npm run dev
 ```
+
 The server will start at http://localhost:5000
 
 ## 📁 Project Structure
+
 ```
 everything-green-backend/
 ├── src/
@@ -83,3 +100,5 @@ everything-green-backend/
 ├── tsconfig.json         # TypeScript configuration
 └── README.md
 ```
+
+## Test Link : https://everything-green-backend-eta.vercel.app/api/health

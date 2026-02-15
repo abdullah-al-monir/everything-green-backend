@@ -52,6 +52,7 @@ app.use((req: Request, res: Response) => {
 // Error handling middleware
 app.use(errorHandler);
 
+
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
