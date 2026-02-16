@@ -54,10 +54,10 @@ app.use(errorHandler);
 
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`Environment: ${process.env.NODE_ENV || "development"}`);
-  console.log(`CORS enabled for: ${FRONTEND_URL}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`🚀 Server running on port ${PORT}`);
+//   console.log(`Environment: ${process.env.NODE_ENV || "development"}`);
+//   console.log(`CORS enabled for: ${FRONTEND_URL}`);
+// });
 
 export default app;
