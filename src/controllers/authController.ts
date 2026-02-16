@@ -3,7 +3,7 @@ import { validationResult } from "express-validator";
 import User from "@/models/User";
 import { generateToken } from "@/utils/jwt";
 import { ApiResponse } from "@/types";
-import { config } from "@/config/env";
+import { config } from "../config/env";
 
 export const register = async (req: Request, res: Response): Promise<void> => {
   try {

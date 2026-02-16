@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 import bcrypt from "bcryptjs";
-import { IUser } from "@/types";
+import { IUser } from "../types";
 
 interface UserDocument extends Omit<IUser, "_id">, Document {
   comparePassword(enteredPassword: string): Promise<boolean>;

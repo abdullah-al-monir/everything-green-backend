@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import { JwtPayload } from "@/types";
-import { config } from "@/config/env";
+import { config } from "../config/env";
 
 const JWT_SECRET = config.jwtSecret;
 const JWT_EXPIRE = config.jwtExpire || "7d";

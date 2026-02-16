@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { validationResult } from "express-validator";
-import User from "@/models/User";
-import { AuthRequest, ApiResponse } from "@/types";
+import User from "../models/User";
+import { AuthRequest, ApiResponse } from "../types";
 
 export const getProfile = async (
   req: AuthRequest,
