@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { JwtPayload } from "@/types";
+import { JwtPayload } from "../types";
 import { config } from "../config/env";
 
 const JWT_SECRET = config.jwtSecret;
