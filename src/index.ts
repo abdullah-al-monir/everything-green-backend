@@ -2,11 +2,12 @@ import express, { Express, Request, Response } from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import helmet from "helmet";
-import connectDB from "./config/database";
-import { errorHandler } from "@/middleware/errorHandler";
-import authRoutes from "@/routes/authRoutes";
-import userRoutes from "@/routes/userRoutes";
 import { config } from "./config/env";
+import connectDB from "./config/database";
+import authRoutes from './routes/authRoutes';
+import userRoutes from './routes/userRoutes';
+import { errorHandler } from "./middleware/errorHandler";
+
 
 const app: Express = express();
 const PORT = config.port || 5000;
